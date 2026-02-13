@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Naz to Dave: Will You Be My Valentine? 💝</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* your existing CSS – completely unchanged */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #ff4d6d;
+            --secondary: #ff8fa3;
+            --accent: #ffb3c1;
+            --light: #fff0f3;
+            --dark: #590d22;
+            --blue: #4a6fa5;
+            --green: #25D366;
+            --whatsapp: #25D366;
+            --sms: #2196F3;
+            --email: #D44638;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fff0f3 0%, #ffccd5 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: var(--dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 12px rgba(89, 13, 34, 0.1);
+            border-radius: 0 0 20px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--dark);
+            opacity: 0.8;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), 
+                        url('https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80');
+            background-size: cover;
+            background-position: center;
+            border-radius: 30px;
+            margin: 30px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .from-to {
+            font-size: 1.8rem;
+            color: var(--blue);
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            color: var(--dark);
+        }
+
+        /* Countdown Timer */
+        .countdown-container {
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px 20px;
+            box-shadow: 0 10px 30px rgba(255, 77, 109, 0.2);
+            margin: 40px auto;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .countdown-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 35px;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 0 10px;
+        }
+
+        .countdown-item {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px 10px;
+            border-radius: 15px;
+            min-width: 110px;
+            flex: 1 1 110px;
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(255, 77, 109, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .countdown-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(255, 77, 109, 0.4);
+        }
+
+        .countdown-value {
+            font-size: 2.8rem;
+            font-weight: 700;
+            display: block;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+
+        .countdown-label {
+            font-size: 1rem;
+            opacity: 0.95;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* Proposal Section */
+        .proposal {
+            text-align: center;
+            padding: 60px 20px;
+            margin: 50px 0;
+            position: relative;
+        }
+
+        .proposal h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+
+        .proposal-text {
+            font-size: 1.8rem;
+            max-width: 900px;
+            margin: 0 auto 50px;
+            line-height: 1.7;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .proposal-text::before {
+            content: "💖";
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+            background: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 45px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .yes-btn {
+            background: linear-gradient(135deg, var(--primary), #ff2e4d);
+            color: white;
+        }
+
+        .no-btn {
+            background-color: white;
+            color: var(--dark);
+            border: 3px solid var(--accent);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .yes-btn:hover {
+            background: linear-gradient(135deg, #ff2e4d, var(--primary));
+        }
+
+        .no-btn:hover {
+            background-color: var(--light);
+        }
+
+        .send-btn {
+            background: linear-gradient(135deg, var(--blue), #2e5aa5);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 auto;
+            box-shadow: 0 8px 15px rgba(74, 111, 165, 0.2);
+        }
+
+        .send-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(74, 111, 165, 0.3);
+        }
+
+        /* Questions Container */
+        .questions-container {
+            display: none;
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .questions-container h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .questions-container > p {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            color: var(--dark);
+            opacity: 0.8;
+        }
+
+        .questions-content {
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .question-group {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, rgba(255, 77, 109, 0.05), rgba(255, 179, 193, 0.05));
+            border-radius: 15px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .question-group label {
+            display: block;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .question-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .option-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: white;
+            border: 2px solid var(--accent);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .option-item:hover {
+            background: var(--light);
+            border-color: var(--primary);
+        }
+
+        .option-item input[type="radio"] {
+            margin-right: 12px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+            accent-color: var(--primary);
+        }
+
+        .option-item label {
+            margin: 0;
+            font-weight: 400;
+            cursor: pointer;
+            flex: 1;
+            text-align: left;
+        }
+
+        .answers-summary {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #155724;
+            text-align: left;
+        }
+
+        .answers-summary h4 {
+            color: #155724;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .answer-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .answer-item strong {
+            color: var(--primary);
+        }
+
+        /* Hearts Animation */
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .heart {
+            position: absolute;
+            color: var(--primary);
+            font-size: 20px;
+            opacity: 0.7;
+            animation: float 8s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 0.7;
+            }
+            90% {
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Love Letter Section */
+        .love-letter {
+            background-color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 50px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            border: 1px solid var(--accent);
+        }
+
+        .love-letter h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.8rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .letter-content {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .letter-signature {
+            text-align: right;
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-top: 30px;
+        }
+
+        /* Photo Upload */
+        .photo-upload-section {
+            background: linear-gradient(135deg, rgba(255, 77, 109, 0.1), rgba(255, 179, 193, 0.1));
+            border: 2px dashed var(--primary);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin: 30px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .photo-upload-section:hover {
+            background: linear-gradient(135deg, rgba(255, 77, 109, 0.2), rgba(255, 179, 193, 0.2));
+            border-color: var(--secondary);
+        }
+
+        .photo-upload-section h4 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .photo-upload-section p {
+            color: var(--dark);
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .upload-input {
+            display: none;
+        }
+
+        .upload-btn {
+            background: linear-gradient(135deg, var(--primary), #ff2e4d);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .upload-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(255, 77, 109, 0.3);
+        }
+
+        .upload-info {
+            font-size: 0.85rem;
+            color: var(--dark);
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        /* Photo Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .gallery-item {
+            border-radius: 15px;
+            overflow: hidden;
+            height: 250px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .remove-photo-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(220, 53, 69, 0.9);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .gallery-item:hover .remove-photo-btn {
+            opacity: 1;
+        }
+
+        .remove-photo-btn:hover {
+            background: rgba(220, 53, 69, 1);
+            transform: scale(1.1);
+        }
+
+        .uploaded-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(40, 167, 69, 0.9);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Sharing Section */
+        .sharing-section {
+            background: linear-gradient(135deg, var(--light), white);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 50px 0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .sharing-section h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .share-btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            color: white;
+            min-width: 200px;
+            justify-content: center;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-share {
+            background: var(--whatsapp);
+        }
+
+        .sms-share {
+            background: var(--sms);
+        }
+
+        .email-share {
+            background: var(--email);
+        }
+
+        .copy-share {
+            background: #FF9800;
+        }
+
+        .share-instructions {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Notifications */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 10000;
+            font-weight: 600;
+            animation: slideIn 0.3s ease, fadeOut 0.3s ease 2.7s forwards;
+            display: none;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 30px 30px 0 0;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+
+        /* Responsive Design - unchanged */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3rem; }
+            .from-to { font-size: 1.4rem; }
+            .hero p { font-size: 1.2rem; }
+            .countdown-title { font-size: 2rem; margin-bottom: 25px; }
+            .countdown { gap: 12px; }
+            .countdown-item { min-width: 100px; flex: 1 1 100px; padding: 18px 8px; }
+            .countdown-value { font-size: 2.2rem; }
+            .countdown-label { font-size: 0.85rem; }
+            .proposal h2 { font-size: 2.8rem; }
+            .proposal-text { font-size: 1.4rem; padding: 20px; }
+            .buttons { flex-direction: column; align-items: center; gap: 20px; }
+            .btn { width: 100%; max-width: 300px; justify-content: center; }
+            .love-letter { padding: 30px; }
+            .letter-content { font-size: 1.1rem; }
+            .share-buttons { flex-direction: column; align-items: center; }
+            .share-btn { width: 100%; max-width: 300px; }
+            .phone-form-container { padding: 20px; }
+            .photo-upload-section { padding: 25px; }
+            .photo-upload-section h4 { font-size: 1.2rem; }
+            .gallery { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+            .gallery-item { height: 200px; }
+        }
+
+        @media (max-width: 600px) {
+            .countdown-container { padding: 30px 15px; margin: 30px 10px; }
+            .countdown-title { font-size: 1.6rem; margin-bottom: 20px; }
+            .countdown { gap: 8px; }
+            .countdown-item { min-width: 80px; flex: 1 1 80px; padding: 15px 6px; }
+            .countdown-value { font-size: 1.8rem; }
+            .countdown-label { font-size: 0.75rem; }
+        }
+
+        @media (max-width: 480px) {
+            .logo { font-size: 2.5rem; }
+            .hero h1 { font-size: 2.5rem; }
+            .countdown-container { padding: 25px 12px; margin: 25px 5px; border-radius: 15px; }
+            .countdown-title { font-size: 1.4rem; margin-bottom: 18px; }
+            .countdown { gap: 6px; }
+            .countdown-item { min-width: 70px; flex: 1 1 70px; padding: 12px 5px; border-radius: 12px; }
+            .countdown-value { font-size: 1.6rem; }
+            .countdown-label { font-size: 0.7rem; margin-top: 2px; }
+            .gallery { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+            .gallery-item { height: 150px; }
+            .photo-upload-section { padding: 15px; }
+            .upload-btn { padding: 10px 20px; font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="hearts" id="heartsContainer"></div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">My Valentine 💝</div>
+            <div class="subtitle">A special message from Naz to Dave</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Will You Be My Valentine?</h1>
+            <div class="from-to">
+                <span style="color: var(--primary);">From Naz</span> 
+                <i class="fas fa-heart" style="color: var(--primary); margin: 0 15px;"></i> 
+                <span style="color: var(--blue);">To Dave</span>
+            </div>
+            <p>Every moment with you is special, but this Valentine's Day, I want to make it unforgettable. This website is my digital love letter to you.</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-container">
+                <h2 class="countdown-title">Countdown to Valentine's Day</h2>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Letter -->
+        <section class="love-letter">
+            <h2>My Dearest Dave,</h2>
+            <div class="letter-content">
+                <p>From the moment we met, you've brought so much joy and light into my life. Your smile brightens my darkest days, and your laughter is my favorite sound in the world.</p>
+                
+                <p>I remember our first date like it was yesterday - the way you made me feel seen and heard, the way your eyes sparkled when you talked about your passions. Since then, every moment with you has been a treasure.</p>
+                
+                <p>You have this incredible way of making everything better just by being you. Your kindness, your intelligence, your sense of humor - they all make me fall for you more every single day.</p>
+                
+                <p>This Valentine's Day, I want to ask you something important. Something I've been thinking about for a long time...</p>
+            </div>
+            <div class="letter-signature">With all my love,<br>Naz 💖</div>
+        </section>
+
+        <!-- Proposal Section -->
+        <section class="proposal">
+            <h2>The Big Question</h2>
+            <div class="proposal-text">
+                Dave, you mean the world to me. You're my best friend, my confidant, and the person I want to share all my tomorrows with. 
+                So on this special day dedicated to love, I have just one question for you...
+            </div>
+            
+            <div class="buttons">
+                <button class="btn yes-btn" id="yesBtn">
+                    <i class="fas fa-heart"></i> Yes, I'll Be Your Valentine!
+                </button>
+                <button class="btn no-btn" id="noBtn">
+                    <i class="fas fa-question-circle"></i> Maybe Later
+                </button>
+            </div>
+        </section>
+
+        <!-- Questions Section (Hidden initially) -->
+        <div class="questions-container" id="questionsContainer">
+            <h3>A Few Questions for You 💭</h3>
+            <p>Share your feelings and make this Valentine's Day truly special</p>
+            
+            <div class="questions-content" id="questionsContent">
+                <!-- Questions will be dynamically added here -->
+            </div>
+            
+            <button class="send-btn" id="submitAnswersBtn">
+                <i class="fas fa-check"></i> Submit Your Answers & Send to Naz 💌
+            </button>
+            
+            <div class="answers-summary" id="answersSummary" style="display: none; margin-top: 30px;">
+                <!-- Summary will appear here -->
+            </div>
+        </div>
+
+        <!-- Sharing Section -->
+        <section class="sharing-section">
+            <h3>Share This Special Moment</h3>
+            <p style="margin-bottom: 30px; font-size: 1.2rem;">Want to share this proposal with others or save it for later?</p>
+            
+            <div class="share-buttons">
+                <button class="share-btn whatsapp-share" id="whatsappBtn">
+                    <i class="fab fa-whatsapp"></i> Share on WhatsApp
+                </button>
+                
+                <button class="share-btn sms-share" id="smsBtn">
+                    <i class="fas fa-sms"></i> Send via SMS
+                </button>
+                
+                <button class="share-btn email-share" id="emailBtn">
+                    <i class="fas fa-envelope"></i> Send via Email
+                </button>
+                
+                <button class="share-btn copy-share" id="copyBtn">
+                    <i class="fas fa-copy"></i> Copy Link
+                </button>
+            </div>
+            
+            <div class="share-instructions">
+                <h4><i class="fas fa-info-circle"></i> How to Use:</h4>
+                <p style="margin-top: 10px;">• Click any share button above to send this website to someone</p>
+                <p>• Scan the QR code with your phone camera</p>
+                <p>• Save the link to revisit this special message anytime</p>
+                <p>• Send to Dave if you're helping Naz share this proposal</p>
+            </div>
+        </section>
+
+        <!-- Photo Gallery -->
+        <section>
+            <h2 style="text-align: center; font-family: 'Dancing Script', cursive; font-size: 3rem; color: var(--primary); margin: 50px 0 30px;">
+                Our Beautiful Memories
+            </h2>
+            
+            <!-- Photo Upload Section -->
+            <div class="photo-upload-section" id="uploadSection" onclick="document.getElementById('photoInput').click();">
+                <h4><i class="fas fa-cloud-upload-alt"></i> Add Your Photos</h4>
+                <p>Click here or drag & drop your photos to add them to our gallery</p>
+                <button class="upload-btn" onclick="event.stopPropagation(); document.getElementById('photoInput').click();">
+                    <i class="fas fa-image"></i> Choose Photos
+                </button>
+                <input type="file" id="photoInput" class="upload-input" multiple accept="image/*">
+                <div class="upload-info">
+                    <i class="fas fa-info-circle"></i> 
+                </div>
+            </div>
+                
+            <div class="gallery" id="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=774&q=80" alt="Romantic cafe">
+                    <div class="gallery-caption">Our first date at that cozy cafe</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=869&q=80" alt="Beach sunset">
+                    <div class="gallery-caption">Walking hand in hand at sunset</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=764&q=80" alt="Smiling">
+                    <div class="gallery-caption">Your beautiful smile</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&auto=format&fit=crop&w=1171&q=80" alt="Celebration">
+                    <div class="gallery-caption">Celebrating special moments together</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem;">With All My Love</h3>
+            <p>This website was created with love from Naz to Dave for Valentine's Day.</p>
+            <p>Every line of code represents a moment I cherish with you.</p>
+            
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+            
+            <p>© WILSON WANJAMA</p>
+            <p>© 2025</p>
+        </footer>
+    </div>
+
+    <script>
+        // =============================================
+        // JAVASCRIPT FUNCTIONS – MODIFIED AS REQUESTED
+        // =============================================
+
+        // Get current website URL
+        const WEBSITE_URL = window.location.href;
+        const SHARE_MESSAGE = `💖 From Naz to Dave: A Special Valentine's Proposal! 💖\n\nDave, I have something important to ask you this Valentine's Day. Please open this website to see my message:\n\n${WEBSITE_URL}\n\nLove, Naz ❤️`;
+        const EMAIL_SUBJECT = "💌 A Valentine's Day Proposal from Naz";
+
+        // Function 1: Countdown Timer Function
+        function updateCountdown() {
+            const valentinesDay = new Date(new Date().getFullYear(), 1, 14);
+            
+            if (valentinesDay < new Date()) {
+                valentinesDay.setFullYear(valentinesDay.getFullYear() + 1);
+            }
+            
+            const now = new Date();
+            const timeDifference = valentinesDay - now;
+            
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            if (timeDifference < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdown').innerHTML = '<div style="text-align:center; font-size: 2rem; color: #ff4d6d;">Happy Valentine\'s Day! 💝</div>';
+            }
+        }
+
+        // Function 2: Create Floating Hearts
+        function createHearts() {
+            const heartsContainer = document.getElementById('heartsContainer');
+            const heartCount = 50;
+            
+            for (let i = 0; i < heartCount; i++) {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '❤️';
+                
+                heart.style.left = Math.random() * 100 + 'vw';
+                const size = Math.random() * 20 + 10;
+                heart.style.fontSize = size + 'px';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                heart.style.animationDuration = (Math.random() * 5 + 5) + 's';
+                
+                heartsContainer.appendChild(heart);
+            }
+        }
+
+        // Function 3: Handle Yes Button Click
+        function handleYesClick() {
+            document.querySelector('.buttons').style.display = 'none';
+            document.querySelector('.proposal-text').style.display = 'none';
+            
+            const proposalSection = document.querySelector('.proposal');
+            const successMessage = document.createElement('div');
+            successMessage.style.cssText = `
+                background: linear-gradient(135deg, #d4edda, #c3e6cb);
+                color: #155724;
+                padding: 30px;
+                border-radius: 15px;
+                margin: 20px 0;
+                font-size: 1.8rem;
+                border: 2px solid #155724;
+            `;
+            successMessage.innerHTML = `
+                <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; margin-bottom: 15px;">YES! 🎉💖🎊</h3>
+                <p>You've made Naz the happiest person in the world!</p>
+                <p style="margin-top: 15px; font-size: 1.5rem;">Answer a few questions to make this even more special...</p>
+            `;
+            
+            proposalSection.appendChild(successMessage);
+            
+            setTimeout(() => {
+                document.getElementById('questionsContainer').style.display = 'block';
+                loadQuestions();
+                document.getElementById('questionsContainer').scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }, 1000);
+            
+            for (let i = 0; i < 20; i++) {
+                setTimeout(() => {
+                    createCelebrationHeart();
+                }, i * 100);
+            }
+        }
+
+        // Function 4: Create Celebration Heart
+        function createCelebrationHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '💖';
+            heart.style.position = 'fixed';
+            heart.style.fontSize = '30px';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = '100vh';
+            heart.style.zIndex = '1000';
+            heart.style.pointerEvents = 'none';
+            heart.style.animation = `celebrate 2s forwards`;
+            
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes celebrate {
+                    0% { transform: translateY(0) scale(1); opacity: 1; }
+                    100% { transform: translateY(-100vh) scale(2); opacity: 0; }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                if (heart.parentNode) {
+                    heart.parentNode.removeChild(heart);
+                }
+            }, 2000);
+        }
+
+        // Function 5: Handle No Button Click
+        function handleNoClick() {
+            const noBtn = document.getElementById('noBtn');
+            const yesBtn = document.getElementById('yesBtn');
+            
+            let currentSize = 1.5;
+            const increaseSize = () => {
+                currentSize += 0.1;
+                yesBtn.style.fontSize = `${currentSize}rem`;
+                yesBtn.style.padding = `${18 + currentSize * 2}px ${45 + currentSize * 5}px`;
+                
+                if (currentSize < 2.5) {
+                    setTimeout(increaseSize, 100);
+                }
+            };
+            
+            increaseSize();
+            
+            let moveCount = 0;
+            const moveButton = () => {
+                if (moveCount < 10) {
+                    const x = Math.random() * 200 - 100;
+                    const y = Math.random() * 100 - 50;
+                    noBtn.style.transform = `translate(${x}px, ${y}px)`;
+                    moveCount++;
+                    setTimeout(moveButton, 300);
+                } else {
+                    setTimeout(() => {
+                        noBtn.style.transform = 'translate(0, 0)';
+                        noBtn.innerHTML = '<i class="fas fa-smile-wink"></i> Just Kidding, YES!';
+                        noBtn.classList.remove('no-btn');
+                        noBtn.classList.add('yes-btn');
+                        noBtn.onclick = handleYesClick;
+                    }, 1000);
+                }
+            };
+            
+            moveButton();
+        }
+
+        // --- NEW: WhatsApp redirect function ---
+       // --- FIXED: WhatsApp redirect function with website link ---
+// --- FIXED: WhatsApp redirect function with website link ---
+function sendAnswersViaWhatsApp(answers) {
+    // Build a beautiful message with all of Dave's answers
+    let message = "💌 *Dave's Valentine Acceptance for Naz* 💌\n\n";
+    message += "Dave said YES to being your Valentine! 💖\n\n";
+    message += "Here are his heartfelt answers:\n";
+    message += "══════════════════════════════\n\n";
+
+    const questionLabels = {
+        firstMeeting: "💫 When We First Met",
+        favorite: "❤️ Favorite Thing About Us",
+        dream: "🌹 Our Future Together",
+        valentine: "🎁 What Valentine's Means",
+        promise: "💝 Promise to Naz",
+        special: "🌟 What Makes Her Special",
+        loveAboutNaz: "💕 What Dave Loves Most About Naz",
+        favoriteActivity: "🎉 Favorite Activity Together"
+    };
+
+    Object.keys(answers).forEach(key => {
+        const label = questionLabels[key];
+        if (label && answers[key]) {
+            message += `*${label}:*\n${answers[key]}\n\n`;
+        }
+    });
+
+    message += "══════════════════════════════\n";
+    message += "💘 *Dave is so excited to spend Valentine's Day with you!* 💘\n\n";
+    
+    // ✅ NOW THE LINK IS INCLUDED – Naz can click it to open the website!
+    message += `🔗 *Open the full proposal here:*\n${WEBSITE_URL}\n\n`;
+    message += `Sent with love via the Valentine Proposal Website 💝`;
+
+    // Encode and open WhatsApp
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+        // Function 6: Load Questions (MODIFIED – added 2 new questions)
+        function loadQuestions() {
+            const questionsContent = document.getElementById('questionsContent');
+            questionsContent.innerHTML = '';
+            
+            const questions = [
+                {
+                    id: 'firstMeeting',
+                    type: 'radio',
+                    question: '💫 How did you feel when we first met?',
+                    options: [
+                        'Love at first sight ✨',
+                        'Instantly comfortable with you',
+                        'Surprised by how special you were',
+                        'Knew you were someone different'
+                    ]
+                },
+                {
+                    id: 'favorite',
+                    type: 'radio',
+                    question: '❤️ What\'s your favorite thing about our relationship?',
+                    options: [
+                        'Your unconditional love and support',
+                        'The way you make me laugh',
+                        'How you understand me without words',
+                        'Every moment we share together'
+                    ]
+                },
+                {
+                    id: 'dream',
+                    type: 'radio',
+                    question: '🌹 How do you picture our future together?',
+                    options: [
+                        'Building adventures and creating memories',
+                        'Growing old together, hand in hand',
+                        'A life full of love and happiness',
+                        'Facing everything together as partners'
+                    ]
+                },
+                {
+                    id: 'valentine',
+                    type: 'radio',
+                    question: '🎁 What does Valentine\'s Day mean to you?',
+                    options: [
+                        'Celebrating our love every single day',
+                        'A special time to express my feelings',
+                        'Being grateful for having you in my life',
+                        'Making memories that last forever'
+                    ]
+                },
+                {
+                    id: 'promise',
+                    type: 'radio',
+                    question: '💝 What\'s your promise to Naz this Valentine\'s?',
+                    options: [
+                        'To love you more with each passing day',
+                        'To always be there when you need me',
+                        'To make every moment count',
+                        'To cherish you and our beautiful love story'
+                    ]
+                },
+                {
+                    id: 'special',
+                    type: 'radio',
+                    question: '🌟 What makes Naz extra special to you?',
+                    options: [
+                        'Her genuine heart and kindness',
+                        'The way she lights up my world',
+                        'Her strength and beautiful spirit',
+                        'Everything - she\'s my perfect match'
+                    ]
+                },
+                // --- TWO NEW QUESTIONS ADDED HERE ---
+                {
+                    id: 'loveAboutNaz',
+                    type: 'radio',
+                    question: '💕 What do you love most about Naz?',
+                    options: [
+                        'Her beautiful smile that lights up my day',
+                        'Her kind and caring heart',
+                        'Her amazing sense of humour',
+                        'Everything about her – she’s perfect'
+                    ]
+                },
+                {
+                    id: 'favoriteActivity',
+                    type: 'radio',
+                    question: '🎉 What\'s your favourite activity to do together?',
+                    options: [
+                        'Cosy movie nights at home',
+                        'Long walks and deep conversations',
+                        'Trying new restaurants and cafes',
+                        'Just being together, doing anything'
+                    ]
+                }
+            ];
+            
+            questions.forEach(q => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question-group';
+                
+                let inputHTML = `<label>${q.question}</label>
+                    <div class="question-options">
+                        ${q.options.map((option, idx) => `
+                            <div class="option-item">
+                                <input type="radio" id="${q.id}_${idx}" name="${q.id}" value="${option}">
+                                <label for="${q.id}_${idx}">${option}</label>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                
+                questionDiv.innerHTML = inputHTML;
+                questionsContent.appendChild(questionDiv);
+            });
+        }
+
+        // Function 7: Submit Answers (MODIFIED – now includes WhatsApp redirect)
+        function submitAnswers() {
+            const answers = {};
+            // Updated questionIds to include the two new ones
+            const questionIds = ['firstMeeting', 'favorite', 'dream', 'valentine', 'promise', 'special', 'loveAboutNaz', 'favoriteActivity'];
+            let allAnswered = true;
+            
+            questionIds.forEach(id => {
+                const radioInput = document.querySelector(`input[name="${id}"]:checked`);
+                
+                if (radioInput) {
+                    answers[id] = radioInput.value;
+                } else {
+                    allAnswered = false;
+                }
+            });
+            
+            if (!allAnswered) {
+                showNotification('💭 Please answer all questions to continue!');
+                return;
+            }
+            
+            // --- NEW: Send answers via WhatsApp ---
+            sendAnswersViaWhatsApp(answers);
+            
+            // Then display the summary as before
+            displayAnswersSummary(answers);
+        }
+
+        // Function 8: Display Answers Summary (UPDATED with new questions)
+        function displayAnswersSummary(answers) {
+            const questionLabels = {
+                firstMeeting: '💫 When We First Met',
+                favorite: '❤️ Your Favorite Thing',
+                dream: '🌹 Our Future Together',
+                valentine: '🎁 What Valentine\'s Means',
+                promise: '💝 Your Promise to Naz',
+                special: '🌟 What Makes Her Special',
+                loveAboutNaz: '💕 What You Love Most About Naz',
+                favoriteActivity: '🎉 Your Favorite Activity Together'
+            };
+            
+            const summary = document.getElementById('answersSummary');
+            let summaryHTML = `
+                <h4 style="text-align: center; margin-bottom: 25px; color: #155724;">💖 Dave's Heartfelt Answers 💖</h4>
+            `;
+            
+            Object.keys(answers).forEach(key => {
+                const answer = answers[key];
+                const label = questionLabels[key];
+                if (answer) {
+                    summaryHTML += `
+                        <div class="answer-item">
+                            <strong>${label}:</strong><br>
+                            ${answer}
+                        </div>
+                    `;
+                }
+            });
+            
+            summaryHTML += `
+                <p style="margin-top: 25px; color: #155724; font-size: 1.2rem; font-weight: 600; text-align: center; line-height: 1.8;">
+                    <i class="fas fa-heart"></i> Thank you for opening your heart, Dave! <i class="fas fa-heart"></i><br>
+                    These words mean the world to Naz. 💝<br>
+                    Happy Valentine's Day! 🌹
+                </p>
+            `;
+            
+            summary.innerHTML = summaryHTML;
+            summary.style.display = 'block';
+            
+            document.getElementById('questionsContainer').style.display = 'none';
+            summary.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            showNotification('Your answers have been saved and sent to Naz via WhatsApp! 💖');
+            
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    createCelebrationHeart();
+                }, i * 50);
+            }
+        }
+
+        // (All other functions remain untouched – validatePhoneNumber, formatPhoneNumber, etc. are kept but not used)
+        function validatePhoneNumber(phoneNumber) {
+            const digitsOnly = phoneNumber.replace(/\D/g, '');
+            return digitsOnly.length >= 10;
+        }
+
+        function formatPhoneNumber(phoneNumber) {
+            const digitsOnly = phoneNumber.replace(/\D/g, '');
+            if (digitsOnly.length === 10) {
+                return `(${digitsOnly.substring(0,3)}) ${digitsOnly.substring(3,6)}-${digitsOnly.substring(6)}`;
+            } else if (digitsOnly.length === 11 && digitsOnly.charAt(0) === '1') {
+                return `+1 (${digitsOnly.substring(1,4)}) ${digitsOnly.substring(4,7)}-${digitsOnly.substring(7)}`;
+            } else {
+                return phoneNumber;
+            }
+        }
+
+        function generateMessagePreview(phoneNumber, message) { /* ... (unchanged) ... */ }
+        function sendAcceptance() { /* ... (unchanged) ... */ }
+        function simulateMessageSending(phoneNumber, message) { /* ... (unchanged) ... */ }
+        function previewMessage() { /* ... (unchanged) ... */ }
+
+        // Function 9: Share via WhatsApp
+        function shareViaWhatsApp() {
+            window.open(`https://wa.me/?text=${encodeURIComponent(SHARE_MESSAGE)}`, '_blank');
+            showNotification('Opening WhatsApp to share...');
+        }
+
+        // Function 10: Share via SMS
+        function shareViaSMS() {
+            if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                window.location.href = `sms:?body=${encodeURIComponent(SHARE_MESSAGE)}`;
+            } else {
+                alert("On mobile: This would open your messaging app\n\nOn desktop: Send this message:\n\n" + SHARE_MESSAGE);
+            }
+            showNotification('Opening Messages app...');
+        }
+
+        // Function 11: Share via Email
+        function shareViaEmail() {
+            const emailBody = `Dear Dave,\n\n${SHARE_MESSAGE}\n\nLove,\nNaz`;
+            window.open(`mailto:?subject=${encodeURIComponent(EMAIL_SUBJECT)}&body=${encodeURIComponent(emailBody)}`);
+            showNotification('Opening email client...');
+        }
+
+        // Function 12: Copy Link to Clipboard
+        function copyLinkToClipboard() {
+            navigator.clipboard.writeText(WEBSITE_URL).then(function() {
+                showNotification('Link copied to clipboard! 📋');
+            }).catch(function(err) {
+                const tempInput = document.createElement('input');
+                tempInput.value = WEBSITE_URL;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+                showNotification('Link copied to clipboard! 📋');
+            });
+        }
+
+        // Function 13: Update QR Code (unchanged, kept for compatibility)
+        function updateQRCode() {
+            // No QR element present, but function kept
+        }
+
+        // Function 14: Check if Mobile
+        function isMobile() {
+            return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        }
+
+        // Function 15: Handle Photo Upload
+        function handlePhotoUpload(files) {
+            const uploadedPhotos = JSON.parse(localStorage.getItem('uploadedPhotos')) || [];
+            
+            for (let file of files) {
+                if (file.size > 5 * 1024 * 1024) {
+                    showNotification(`${file.name} is too large (max 5MB)`);
+                    continue;
+                }
+                if (!file.type.startsWith('image/')) {
+                    showNotification(`${file.name} is not a valid image`);
+                    continue;
+                }
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    uploadedPhotos.push({
+                        data: e.target.result,
+                        name: file.name,
+                        date: new Date().toLocaleDateString()
+                    });
+                    localStorage.setItem('uploadedPhotos', JSON.stringify(uploadedPhotos));
+                    displayUploadedPhotos();
+                    showNotification(`✨ ${file.name} added to gallery!`);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Function 16: Display Uploaded Photos
+        function displayUploadedPhotos() {
+            const gallery = document.getElementById('gallery');
+            const uploadedPhotos = JSON.parse(localStorage.getItem('uploadedPhotos')) || [];
+            const existingUploads = gallery.querySelectorAll('[data-uploaded="true"]');
+            existingUploads.forEach(item => item.remove());
+            
+            uploadedPhotos.reverse().forEach((photo, index) => {
+                const galleryItem = document.createElement('div');
+                galleryItem.className = 'gallery-item';
+                galleryItem.setAttribute('data-uploaded', 'true');
+                galleryItem.setAttribute('data-index', uploadedPhotos.length - 1 - index);
+                galleryItem.innerHTML = `
+                    <img src="${photo.data}" alt="${photo.name}">
+                    <div class="gallery-caption">${photo.name}</div>
+                    <span class="uploaded-badge"><i class="fas fa-star"></i> Added by You</span>
+                    <button class="remove-photo-btn" onclick="removePhoto(${uploadedPhotos.length - 1 - index})">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                gallery.insertBefore(galleryItem, gallery.firstChild);
+            });
+        }
+
+        // Function 17: Remove Uploaded Photo
+        function removePhoto(index) {
+            event.stopPropagation();
+            const uploadedPhotos = JSON.parse(localStorage.getItem('uploadedPhotos')) || [];
+            uploadedPhotos.splice(index, 1);
+            localStorage.setItem('uploadedPhotos', JSON.stringify(uploadedPhotos));
+            displayUploadedPhotos();
+            showNotification('Photo removed from gallery');
+        }
+
+        // Function 18: Setup Drag & Drop
+        function setupDragDrop() {
+            const uploadSection = document.getElementById('uploadSection');
+            uploadSection.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                uploadSection.style.background = 'linear-gradient(135deg, rgba(255, 77, 109, 0.3), rgba(255, 179, 193, 0.3))';
+                uploadSection.style.borderColor = '#ff8fa3';
+            });
+            uploadSection.addEventListener('dragleave', () => {
+                uploadSection.style.background = 'linear-gradient(135deg, rgba(255, 77, 109, 0.1), rgba(255, 179, 193, 0.1))';
+                uploadSection.style.borderColor = '#ff4d6d';
+            });
+            uploadSection.addEventListener('drop', (e) => {
+                e.preventDefault();
+                uploadSection.style.background = 'linear-gradient(135deg, rgba(255, 77, 109, 0.1), rgba(255, 179, 193, 0.1))';
+                uploadSection.style.borderColor = '#ff4d6d';
+                const files = e.dataTransfer.files;
+                handlePhotoUpload(files);
+            });
+            document.getElementById('photoInput').addEventListener('change', (e) => {
+                handlePhotoUpload(e.target.files);
+                e.target.value = '';
+            });
+        }
+
+        // =============================================
+        // INITIALIZE THE WEBSITE
+        // =============================================
+
+        updateCountdown();
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        createHearts();
+        updateQRCode();
+        setupDragDrop();
+        displayUploadedPhotos();
+
+        document.getElementById('yesBtn').addEventListener('click', handleYesClick);
+        document.getElementById('noBtn').addEventListener('click', handleNoClick);
+        document.getElementById('submitAnswersBtn').addEventListener('click', submitAnswers);
+        
+        document.getElementById('whatsappBtn').addEventListener('click', shareViaWhatsApp);
+        document.getElementById('smsBtn').addEventListener('click', shareViaSMS);
+        document.getElementById('emailBtn').addEventListener('click', shareViaEmail);
+        document.getElementById('copyBtn').addEventListener('click', copyLinkToClipboard);
+
+        if (!isMobile()) {
+            const sharingSection = document.querySelector('.share-instructions');
+            const mobileWarning = document.createElement('p');
+            mobileWarning.style.cssText = 'color: #ff9800; background: #fff3cd; padding: 10px; border-radius: 5px; margin-top: 15px;';
+            mobileWarning.innerHTML = '<i class="fas fa-exclamation-triangle"></i> <strong>You\'re on desktop.</strong> Send the link to your phone to view it properly!';
+            sharingSection.appendChild(mobileWarning);
+        }
+
+        console.log("💝 Valentine Proposal Website Initialized 💝");
+        console.log("From: Naz to Dave");
+        console.log("URL:", WEBSITE_URL);
+        console.log("Features: Countdown, Love Letter, Proposal, 2 new questions, WhatsApp auto-send");
+    </script>
+</body>
+</html>
